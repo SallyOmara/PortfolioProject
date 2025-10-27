@@ -1,0 +1,78 @@
+.portfolio-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-comp h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2,
+.star-icon {
+  color: #2c3e50;
+}
+
+.star-icon {
+  position: relative;
+}
+
+.star-icon::before {
+  content: "";
+  position: absolute;
+  right: 180%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 80px;
+  background-color: #2c3e50;
+}
+
+.star-icon::after {
+  content: "";
+  position: absolute;
+  left: 180%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 80px;
+  background-color: #2c3e50;
+}
+
+.port-img figure {
+  position: relative;
+  cursor: pointer;
+}
+
+.port-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.port-img img {
+  border-radius: 10px;
+}
+
+.layer-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 55%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
